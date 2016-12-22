@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		546EC2D11E0AF7EC00FADDD1 /* CalcController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EC2CF1E0AF7EC00FADDD1 /* CalcController.m */; };
+		546EC2D21E0AF7EC00FADDD1 /* CalcController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546EC2D01E0AF7EC00FADDD1 /* CalcController.xib */; };
 		54C4B9AF1E09A35100E99EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B9AE1E09A35100E99EE5 /* main.m */; };
 		54C4B9B21E09A35100E99EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B9B11E09A35100E99EE5 /* AppDelegate.m */; };
-		54C4B9B51E09A35100E99EE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B9B41E09A35100E99EE5 /* ViewController.m */; };
-		54C4B9B81E09A35100E99EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C4B9B61E09A35100E99EE5 /* Main.storyboard */; };
 		54C4B9BA1E09A35100E99EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C4B9B91E09A35100E99EE5 /* Assets.xcassets */; };
 		54C4B9BD1E09A35100E99EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C4B9BB1E09A35100E99EE5 /* LaunchScreen.storyboard */; };
 		54C4B9C81E09A35100E99EE5 /* EasyCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B9C71E09A35100E99EE5 /* EasyCalcTests.m */; };
@@ -35,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		546EC2CE1E0AF7EC00FADDD1 /* CalcController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcController.h; sourceTree = "<group>"; };
+		546EC2CF1E0AF7EC00FADDD1 /* CalcController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcController.m; sourceTree = "<group>"; };
+		546EC2D01E0AF7EC00FADDD1 /* CalcController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalcController.xib; sourceTree = "<group>"; };
 		54C4B9AA1E09A35100E99EE5 /* EasyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C4B9AE1E09A35100E99EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54C4B9B01E09A35100E99EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54C4B9B11E09A35100E99EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		54C4B9B31E09A35100E99EE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54C4B9B41E09A35100E99EE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		54C4B9B71E09A35100E99EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54C4B9B91E09A35100E99EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C4B9BC1E09A35100E99EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54C4B9BE1E09A35100E99EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,13 +103,13 @@
 			children = (
 				54C4B9B01E09A35100E99EE5 /* AppDelegate.h */,
 				54C4B9B11E09A35100E99EE5 /* AppDelegate.m */,
-				54C4B9B31E09A35100E99EE5 /* ViewController.h */,
-				54C4B9B41E09A35100E99EE5 /* ViewController.m */,
-				54C4B9B61E09A35100E99EE5 /* Main.storyboard */,
 				54C4B9B91E09A35100E99EE5 /* Assets.xcassets */,
 				54C4B9BB1E09A35100E99EE5 /* LaunchScreen.storyboard */,
 				54C4B9BE1E09A35100E99EE5 /* Info.plist */,
 				54C4B9AD1E09A35100E99EE5 /* Supporting Files */,
+				546EC2CE1E0AF7EC00FADDD1 /* CalcController.h */,
+				546EC2CF1E0AF7EC00FADDD1 /* CalcController.m */,
+				546EC2D01E0AF7EC00FADDD1 /* CalcController.xib */,
 			);
 			path = EasyCalc;
 			sourceTree = "<group>";
@@ -246,9 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546EC2D21E0AF7EC00FADDD1 /* CalcController.xib in Resources */,
 				54C4B9BD1E09A35100E99EE5 /* LaunchScreen.storyboard in Resources */,
 				54C4B9BA1E09A35100E99EE5 /* Assets.xcassets in Resources */,
-				54C4B9B81E09A35100E99EE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C4B9B51E09A35100E99EE5 /* ViewController.m in Sources */,
+				546EC2D11E0AF7EC00FADDD1 /* CalcController.m in Sources */,
 				54C4B9B21E09A35100E99EE5 /* AppDelegate.m in Sources */,
 				54C4B9AF1E09A35100E99EE5 /* main.m in Sources */,
 			);
@@ -311,14 +311,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		54C4B9B61E09A35100E99EE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54C4B9B71E09A35100E99EE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		54C4B9BB1E09A35100E99EE5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +497,7 @@
 				54C4B9D91E09A35100E99EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54C4B9DA1E09A35100E99EE5 /* Build configuration list for PBXNativeTarget "EasyCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +506,7 @@
 				54C4B9DC1E09A35100E99EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54C4B9DD1E09A35100E99EE5 /* Build configuration list for PBXNativeTarget "EasyCalcUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +515,7 @@
 				54C4B9DF1E09A35100E99EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

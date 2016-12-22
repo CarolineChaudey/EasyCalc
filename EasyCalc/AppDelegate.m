@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CalcController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CalcController* hvc = [[CalcController alloc] init];
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+    UIWindow* window = [[UIWindow alloc] initWithFrame:screenRect];
+    window.rootViewController = hvc;
+    [window makeKeyAndVisible];
+    self.window = window;
+
+    
     return YES;
 }
 
