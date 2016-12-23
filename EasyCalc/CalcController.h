@@ -10,4 +10,6 @@
 
 @interface CalcController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *field;
+
 @end

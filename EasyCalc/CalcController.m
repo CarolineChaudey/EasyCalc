@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)touchDigit:(id)sender {
+    self.field.text = @"Hello world !";
+}
+
+- (IBAction)touchCancel:(id)sender {
+    self.field.text = @"";
+}
+
 @end
