@@ -27,7 +27,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPp-u2-XmK">
                             <rect key="frame" x="22" y="27" width="325" height="83"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -46,6 +46,9 @@
                             <state key="normal" title="1">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="Mg9-dJ-kaW"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy3-D8-Ol4">
                             <rect key="frame" x="110" y="26" width="70" height="80"/>
@@ -55,6 +58,9 @@
                             <state key="normal" title="2">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="kbt-Yj-Ba9"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-21-fYc">
                             <rect key="frame" x="200" y="26" width="70" height="80"/>
@@ -64,6 +70,9 @@
                             <state key="normal" title="3">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="urZ-Nx-X2z"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="692-g4-dyM">
                             <rect key="frame" x="200" y="157" width="70" height="80"/>
@@ -85,6 +94,9 @@
                             <state key="normal" title="5">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="lH8-23-7ad"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRs-QJ-U2W">
                             <rect key="frame" x="110" y="296" width="70" height="80"/>
@@ -94,6 +106,9 @@
                             <state key="normal" title="8">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="B91-xJ-qjd"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQj-Gc-kES">
                             <rect key="frame" x="200" y="296" width="70" height="80"/>
@@ -103,6 +118,9 @@
                             <state key="normal" title="9">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="3cz-IU-xla"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-uB-nZx">
                             <rect key="frame" x="18" y="424" width="70" height="80"/>
@@ -112,6 +130,9 @@
                             <state key="normal" title="0">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="HY7-Ee-nF4"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-CW-DiR">
                             <rect key="frame" x="287" y="26" width="70" height="80"/>
@@ -121,6 +142,9 @@
                             <state key="normal" title="+">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchOperation:" destination="-1" eventType="touchUpInside" id="gB9-8L-Fif"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-rD-1yK">
                             <rect key="frame" x="110" y="424" width="70" height="80"/>
@@ -142,6 +166,9 @@
                             <state key="normal" title="-">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchOperation:" destination="-1" eventType="touchUpInside" id="Jql-LH-ZvO"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsw-gP-tqg">
                             <rect key="frame" x="287" y="424" width="70" height="80"/>
@@ -151,6 +178,9 @@
                             <state key="normal" title="X">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchOperation:" destination="-1" eventType="touchUpInside" id="wh4-wV-ueu"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRW-ua-1zM">
                             <rect key="frame" x="287" y="296" width="70" height="80"/>
@@ -160,6 +190,9 @@
                             <state key="normal" title="./.">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchOperation:" destination="-1" eventType="touchUpInside" id="fj7-Uo-wjF"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DU-tU-Aje">
                             <rect key="frame" x="18" y="296" width="70" height="80"/>
@@ -169,6 +202,9 @@
                             <state key="normal" title="7">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="LVW-eF-TGS"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtF-GN-YZR">
                             <rect key="frame" x="18" y="157" width="70" height="80"/>
@@ -178,6 +214,9 @@
                             <state key="normal" title="4">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="S75-zc-0Pt"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vR-De-c7R">
                             <rect key="frame" x="200" y="424" width="70" height="81"/>
@@ -187,13 +226,16 @@
                             <state key="normal" title="=">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="touchEqual:" destination="-1" eventType="touchUpInside" id="Gwf-Hq-ML1"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-333" y="197"/>
+            <point key="canvasLocation" x="-85" y="185"/>
         </view>
     </objects>
 </document>

@@ -35,11 +35,23 @@
 */
 
 - (IBAction)touchDigit:(id)sender {
-    self.field.text = @"Hello world !";
+    NSString* digit = [(UIButton*) sender currentTitle];
+    self.field.text = [self.field.text stringByAppendingString:digit];
+    
+}
+
+- (IBAction)touchOperation:(id)sender {
+    self.operation = [(UIButton*) sender currentTitle];
+    self.field.text = [self.field.text stringByAppendingString:self.operation];
 }
 
 - (IBAction)touchCancel:(id)sender {
     self.field.text = @"";
+}
+
+- (IBAction)touchEqual:(id)sender {
+    int firstNumber;
+    int secondNumber;
 }
 
 @end

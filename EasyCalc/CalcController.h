@@ -11,5 +11,6 @@
 @interface CalcController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *field;
+@property (weak, nonatomic) NSString* operation;
 
 @end
