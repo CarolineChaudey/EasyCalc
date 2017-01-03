@@ -122,18 +122,6 @@
                                 <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="3cz-IU-xla"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-uB-nZx">
-                            <rect key="frame" x="18" y="424" width="70" height="80"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                            <color key="backgroundColor" red="0.18379338344420521" green="0.53673494174507763" blue="0.51536462015798978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                            <state key="normal" title="0">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="HY7-Ee-nF4"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-CW-DiR">
                             <rect key="frame" x="287" y="26" width="70" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -147,7 +135,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-rD-1yK">
-                            <rect key="frame" x="110" y="424" width="70" height="80"/>
+                            <rect key="frame" x="18" y="425" width="70" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                             <color key="backgroundColor" red="0.14550684759999999" green="0.42033678759999998" blue="0.40214394209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -187,7 +175,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.14550684759999999" green="0.42033678759999998" blue="0.40214394209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                            <state key="normal" title="./.">
+                            <state key="normal" title="/">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -228,6 +216,18 @@
                             </state>
                             <connections>
                                 <action selector="touchEqual:" destination="-1" eventType="touchUpInside" id="Gwf-Hq-ML1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm6-uB-nZx">
+                            <rect key="frame" x="110" y="424" width="70" height="80"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.18379338344420521" green="0.53673494174507763" blue="0.51536462015798978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="touchDigit:" destination="-1" eventType="touchUpInside" id="HY7-Ee-nF4"/>
                             </connections>
                         </button>
                     </subviews>

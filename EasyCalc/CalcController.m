@@ -34,10 +34,10 @@
 }
 */
 
+
 - (IBAction)touchDigit:(id)sender {
     NSString* digit = [(UIButton*) sender currentTitle];
     self.field.text = [self.field.text stringByAppendingString:digit];
-    
 }
 
 - (IBAction)touchOperation:(id)sender {
@@ -50,8 +50,23 @@
 }
 
 - (IBAction)touchEqual:(id)sender {
-    int firstNumber;
-    int secondNumber;
+    
+    NSArray* components = [self.field.text componentsSeparatedByString:self.operation];
+    int firstNumber = [components[0] intValue];
+    int secondNumber = [components[1] intValue];
+    int result;
+    
+    if ([self.operation  isEqual: @"+"]){
+        result = firstNumber + secondNumber;
+    } else if ([self.operation  isEqual: @"-"]) {
+        result = firstNumber - secondNumber;
+    } else if ([self.operation  isEqual: @"X"]) {
+        result = firstNumber * secondNumber;
+    } else if ([self.operation  isEqual: @"/"]) {
+        result = firstNumber / secondNumber;
+    }
+    self.field.text = [NSString stringWithFormat:@"%d", result];
+        
 }
 
 @end
