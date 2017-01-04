@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.operationColor = self.addition.backgroundColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,15 +25,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 - (IBAction)touchDigit:(id)sender {
@@ -43,17 +35,19 @@
 - (IBAction)touchOperation:(id)sender {
     self.operation = [(UIButton*) sender currentTitle];
     self.field.text = [self.field.text stringByAppendingString:self.operation];
+    [self disableOperations];
 }
 
 - (IBAction)touchCancel:(id)sender {
     self.field.text = @"";
+    [self enableOperation];
 }
 
 - (IBAction)touchEqual:(id)sender {
     
     NSArray* components = [self.field.text componentsSeparatedByString:self.operation];
     int firstNumber = [components[0] intValue];
-    int secondNumber = [components[1] intValue];
+    int secondNumber = [components[1] intValue]; // no nullpointer exception ! magic ! Concidered as 0
     int result;
     
     if ([self.operation  isEqual: @"+"]){
@@ -66,7 +60,33 @@
         result = firstNumber / secondNumber;
     }
     self.field.text = [NSString stringWithFormat:@"%d", result];
-        
+    [self enableOperation];
+}
+
+- (void)disableOperations {
+    self.addition.enabled = NO;
+    self.substraction.enabled = NO;
+    self.multiplication.enabled = NO;
+    self.division.enabled = NO;
+    /*
+    self.addition.backgroundColor = [UIColor grayColor];
+    self.substraction.backgroundColor = [UIColor grayColor];
+    self.multiplication.backgroundColor = [UIColor grayColor];
+    self.division.backgroundColor = [UIColor grayColor];
+     */
+}
+
+- (void)enableOperation {
+    self.addition.enabled = YES;
+    self.substraction.enabled = YES;
+    self.multiplication.enabled = YES;
+    self.division.enabled = YES;
+    /*
+    self.addition.backgroundColor = self.operationColor;
+    self.substraction.backgroundColor = self.operationColor;
+    self.multiplication.backgroundColor = self.operationColor;
+    self.division.backgroundColor = self.operationColor;
+     */
 }
 
 @end

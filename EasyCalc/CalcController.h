@@ -11,6 +11,11 @@
 @interface CalcController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *field;
+@property (weak, nonatomic) IBOutlet UIButton *addition;
+@property (weak, nonatomic) IBOutlet UIButton *substraction;
+@property (weak, nonatomic) IBOutlet UIButton *division;
+@property (weak, nonatomic) IBOutlet UIButton *multiplication;
 @property (weak, nonatomic) NSString* operation;
+@property (weak, nonatomic) UIColor* operationColor;
 
 @end
