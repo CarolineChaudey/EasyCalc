@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.operationColor = self.addition.backgroundColor;
+    //self.operationColor = self.addition.backgroundColor;
+    self.operation = @"+";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,22 +46,37 @@
 
 - (IBAction)touchEqual:(id)sender {
     
+    int result;
     NSArray* components = [self.field.text componentsSeparatedByString:self.operation];
     int firstNumber = [components[0] intValue];
-    int secondNumber = [components[1] intValue]; // no nullpointer exception ! magic ! Concidered as 0
-    int result;
+    int secondNumber;
     
-    if ([self.operation  isEqual: @"+"]){
-        result = firstNumber + secondNumber;
-    } else if ([self.operation  isEqual: @"-"]) {
-        result = firstNumber - secondNumber;
-    } else if ([self.operation  isEqual: @"X"]) {
-        result = firstNumber * secondNumber;
-    } else if ([self.operation  isEqual: @"/"]) {
-        result = firstNumber / secondNumber;
+    
+    // if the second number is not correct in some way
+    if (([components count] < 2)
+        || ([components[0]  isEqual: @""])
+        || ([components[1]  isEqual: @""])
+        || ([self.operation isEqual:@"/"] && [components[1] isEqual:@"0"])
+        ) {
+            self.field.text = @"";
+            [self enableOperation];
+    } else {
+        secondNumber = [components[1] intValue];
+        if ([self.operation  isEqual: @"+"]){
+            result = firstNumber + secondNumber;
+        } else if ([self.operation  isEqual: @"-"]) {
+            result = firstNumber - secondNumber;
+        } else if ([self.operation  isEqual: @"X"]) {
+            result = firstNumber * secondNumber;
+        } else if ([self.operation  isEqual: @"/"] && (secondNumber != 0)) {
+            result = firstNumber / secondNumber;
+        }
+        
+        self.field.text = [NSString stringWithFormat:@"%d", result];
+        [self enableOperation];
     }
-    self.field.text = [NSString stringWithFormat:@"%d", result];
-    [self enableOperation];
+    
+    
 }
 
 - (void)disableOperations {

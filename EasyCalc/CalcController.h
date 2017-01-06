@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *division;
 @property (weak, nonatomic) IBOutlet UIButton *multiplication;
 @property (weak, nonatomic) NSString* operation;
-@property (weak, nonatomic) UIColor* operationColor;
+//@property (weak, nonatomic) UIColor* operationColor;
 
 @end
